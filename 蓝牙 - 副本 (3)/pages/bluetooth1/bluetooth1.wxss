@@ -1,0 +1,141 @@
+/* pages/bluetooth1/bluetooth1.wxss */
+.anjian1 {
+    width: 400rpx;
+    height: 100rpx;
+    margin: 10rpx auto;
+    text-align: center;
+    line-height: 65rpx;
+    color: rgb(60, 128, 102);
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.zi_ti_ge_shi_1 {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #07c160;
+    margin: 15rpx auto;
+    font-size: 10px;
+    text-align: center;
+    line-height: 100rpx;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.zi_ti_ge_shi_uuid {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #664fec;
+    margin: 15rpx auto;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 10px;
+    color: rgb(255, 202, 202);
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.zi_ti_ge_shi_lanyashebei {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #5e2459;
+    margin: 15rpx auto;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 10px;
+    color: rgb(255, 202, 202);
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.zi_ti_ge_shi_tishiyuju {
+    width: 700rpx;
+    height: 100rpx;
+    background-color: #000000;
+    margin: 15rpx auto;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.shurufengge {
+    margin: 15rpx auto;
+    height: 100rpx;
+    width: 646rpx;
+    color: rgb(125, 144, 248);
+    background-color: rgb(58, 39, 39);
+    margin: 15rpx auto;
+    border-radius: 12rpx;
+}
+
+.zi_ti_ge_shi_tezheng {
+    width: 700rpx;
+    height: 200rpx;
+    background-color: #664fec;
+    margin: 15rpx auto;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 10px;
+    color: rgb(255, 202, 202);
+    font-weight: bold;
+    border-radius: 12rpx;
+}
+
+.anjian_shurufengge{
+    margin: 15rpx auto;
+    height: 100rpx;
+    width: 300rpx;
+    color: rgb(62, 80, 63);
+    background-color: rgb(255, 188, 188);
+    margin: 15rpx auto;
+    border-radius: 12rpx;
+}
+
+
+.left_div {
+    color: #ffffff;
+    background-color: #159F5D;
+    padding: 15px 10px;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+}
+
+.right_div {
+    color: #000000;
+    background-color: #DC5347;
+    padding: 15px 10px;
+    font-size: 30px;
+    width: 200px;
+    height: 100px;
+}
+
+.anjianfasong {
+    margin: 15rpx auto;
+    height: 100rpx;
+    width: 300rpx;
+    color: rgb(255, 181, 181);
+    background-color: rgb(58, 75, 58);
+    border-radius: 25rpx;
+    align-items: center;
+    margin-right:50px;
+}
+
+
+.loginBtn {
+    width: 35%;
+    margin-top: 35px;
+    margin-left: 10px;
+    float: left;
+}
+
+.registerBtn {
+    width: 35%;
+    margin-top: 35px;
+    margin-right: 10px;
+    float: right;
+}

@@ -1,0 +1,32 @@
+{
+    "pages": [
+        "pages/bluetooth1/bluetooth1",
+        "pages/device1/device1",
+        "pages/device2/device2"
+    ],
+    "tabBar": {
+        "list": [
+          {
+            "pagePath": "pages/bluetooth1/bluetooth1",
+            "text": "蓝牙"
+
+          },
+          {
+            "pagePath": "pages/device1/device1",
+            "text": "常用设备1"
+          },
+          {
+            "pagePath": "pages/device2/device2",
+            "text": "常用设备2"
+          }
+        ]
+      },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fccaf8",
+        "navigationBarTitleText": "蓝牙",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

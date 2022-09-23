@@ -1,0 +1,38 @@
+<!--pages/bluetooth1/bluetooth1.wxml-->
+<button class="anjian1" bindtap="getdiscover">获得周围设备</button>
+
+
+<view wx:if="{{showFlag}}" wx:for="{{devices}}" wx:for-item="devices" wx:key="key" bindtap="create" data-index="{{index}}">
+    <view class="zi_ti_ge_shi_1">设备名称：{{devices.name}}--设备ID：{{devices.deviceId}} </view>
+</view>
+<view class="zi_ti_ge_shi_lanyashebei" wx:if="{{showFlag_lanyashebei}}">当前蓝牙设备：{{name}}--{{deviceId}}</view>
+<view class="zi_ti_ge_shi_tishiyuju" wx:if="{{showFlag_lanyashebei}}">点击服务号获得特征值</view>
+<view wx:if="{{showFlag_lanyashebei}}" wx:for="{{services}}" wx:for-item="service" wx:key="key" bindtap="choose" data-index="{{index}}">
+    <view class="zi_ti_ge_shi_uuid">服务号：{{service.uuid}}</view>
+</view>
+<view class="zi_ti_ge_shi_tishiyuju" wx:if="{{showFlag_tezhengzhi}}">点击下列特征值进行输入</view>
+<view class="zi_ti_ge_shi_tezheng" wx:if="{{showFlag_lanyashebei}}" wx:for="{{characteristics}}" wx:for-item="characteristics" wx:key="key" bindtap="select" data-index="{{index}}">
+    特征值--{{characteristics.uuid}}
+    <view></view>
+    read:{{characteristics.properties.read}}
+    write:{{characteristics.properties.write}}
+</view>
+<button class="anjian1" bindtap="disconnect">断开连接并返回</button>
+<view wx:if="{{showKeyboard}}">
+    <view style=" text-align: center">-输入数据-</view>
+    <input styletype="text" class="shurufengge" focus="{{showKeyboard}}" confirm-type="send" bindconfirm="sendData">
+    </input>
+    <view style=" text-align: center">-接收数据-</view>
+    <view class="shurufengge">{{showData}}</view>
+    <!-- 添加按键 -->
+    <div align="left" style="float:left;margin-left: 25px;">
+        <input class="anjian_shurufengge" bindinput="anjian_1"></input>
+        <button style="margin-left: 0px;" size="mini" class="anjianfasong" type="send" bindtap="sendData_1"> 发送 </button>
+    </div>
+    <div align="right" style="float:right ; margin-right: 25px;">
+        <input class="anjian_shurufengge" bindinput="anjian_2"></input>
+        <button style="margin-left:0px;" size="mini" class="anjianfasong" type="send" bindtap="sendData_2"> 发送 </button>
+    </div>
+    <!-- 添加按键 -->
+
+</view>
